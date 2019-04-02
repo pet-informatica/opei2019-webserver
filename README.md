@@ -5,6 +5,7 @@ The OPEI webserver made in Golang to register students and generate their certif
 ## Getting started
 
 This project runs in go 1.11.x or later (see https://golang.org/dl/)
+Install Go dep (https://golang.github.io/dep/docs/installation.html)
 
 ### Running
 
