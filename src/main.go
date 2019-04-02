@@ -1,7 +1,7 @@
 package main
 
 import (
-	"opei2019-webservice/src/api_gateway"
+	"opei2019-webservice/src/api_gateway/hello"
 	"opei2019-webservice/src/api_gateway/student"
 	"opei2019-webservice/src/student_service"
 
@@ -19,8 +19,8 @@ func main() {
 
 	app := echo.New()
 
-	helloRoute := app.Group(api_gateway.EntryPoint)
-	api_gateway.MakeHelloRoutes(helloRoute)
+	helloRoute := app.Group(hello.EntryPoint)
+	hello.MakeHelloRoutes(helloRoute)
 
 	studentRoutes := app.Group(student.EntryPoint)
 	student.MakeStudentRoutes(studentRoutes, service)

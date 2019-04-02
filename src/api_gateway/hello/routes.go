@@ -1,4 +1,4 @@
-package api_gateway
+package hello
 
 import (
 	"fmt"
